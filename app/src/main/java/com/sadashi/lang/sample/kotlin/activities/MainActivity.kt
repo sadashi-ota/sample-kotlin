@@ -1,6 +1,5 @@
 package com.sadashi.lang.sample.kotlin.activities
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.design.widget.Snackbar
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        var analytics = FirebaseAnalytics.getInstance(baseContext)
+        val analytics = FirebaseAnalytics.getInstance(baseContext)
         val fireLogBundle = Bundle()
         fireLogBundle.putString("TEST", "SampleKotlin app MainActivity.onCreate() is called.")
         analytics.logEvent(FirebaseAnalytics.Event.APP_OPEN, fireLogBundle)
@@ -57,11 +56,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_settings -> {
-                startActivity(Intent(this, SettingsActivity::class.java))
-                return true
-            }
-            R.id.action_oss_licenses -> {
-                startActivity(Intent(this, OssLicensesActivity::class.java))
                 return true
             }
         }

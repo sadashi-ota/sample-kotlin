@@ -7,7 +7,7 @@ import android.support.v4.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import com.sadashi.lang.sample.kotlin.R
-import com.sadashi.lang.sample.kotlin.activities.OssLicensesActivity
+import com.sadashi.lang.sample.kotlin.activities.MainActivity
 
 
 /**
@@ -18,7 +18,7 @@ class MessagingService : FirebaseMessagingService() {
     private val REQUEST_CODE_TEST = 100
 
     override fun onMessageReceived(remoteMessage: RemoteMessage?) {
-        val intent = Intent(this, OssLicensesActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
 
         val contentIntent = PendingIntent.getActivity(applicationContext,
                 REQUEST_CODE_TEST, intent, PendingIntent.FLAG_ONE_SHOT)

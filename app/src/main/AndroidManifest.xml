@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,14 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.SettingsActivity"
-            android:label="@string/title_activity_settings" />
-
-        <activity
-            android:name=".activities.OssLicensesActivity"
-            android:label="@string/title_activity_oss_licenses"
-            android:theme="@style/AppTheme.NoActionBar"/>
 
         <service android:name=".services.MessagingService"
             android:exported="false">
