@@ -1,0 +1,41 @@
+# Libraries not listed in licenses.yml:
+- artifact: android.arch.lifecycle:+:+
+  name: Android Lifecycle Runtime
+  copyrightHolder: The Android Open Source Project
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://developer.android.com/topic/libraries/architecture/index.html
+- artifact: android.arch.core:common:+
+  name: Android Arch-Common
+  copyrightHolder: The Android Open Source Project
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://developer.android.com/topic/libraries/architecture/index.html
+- artifact: com.android.support:+:+
+  name: Android Support Libraries
+  copyrightHolder: The Android Open Source Project
+  license: apache2
+- artifact: com.android.support.constraint:+:+
+  name: Android Support Libraries
+  copyrightHolder: The Android Open Source Project
+  license: apache2
+- artifact: org.jetbrains.kotlin:+:+
+  name: Kotlin
+  copyrightHolder: JetBrains, s.r.o.
+  license: The Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://kotlinlang.org/
+- artifact: org.jetbrains:annotations:+
+  name: IntelliJ IDEA Annotations
+  copyrightHolder: JetBrains, s.r.o.
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://www.jetbrains.org
+- artifact: com.google.android.gms:+:+
+  name: Google Play Service
+  copyrightHolder: Google Inc.
+  skip: true
+- artifact: com.google.firebase:+:+
+  name: Firebase SDK
+  copyrightHolder: Google Inc.
+  skip: true
